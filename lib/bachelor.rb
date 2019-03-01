@@ -19,7 +19,7 @@ end
 
 def get_contestant_name(data, occupation)
   data.each do |season, contestants_info|
-    contestant_info.each do |contestant|
+    contestants_info.each do |contestant|
       contestant.each do |category, personal_info|
         if category == "occupation" && personal_info == occupation
           return contestant["name"]

@@ -1,3 +1,5 @@
+require "pry"
+
 def get_first_name_of_season_winner(data, season)
   winner = " "
   data.each do |correct_season, contestants_info|
@@ -13,6 +15,7 @@ def get_first_name_of_season_winner(data, season)
   end
   
   winner.split[0]
+  binding.pry
 end
 
 def get_contestant_name(data, occupation)

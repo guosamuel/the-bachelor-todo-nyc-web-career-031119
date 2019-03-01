@@ -47,7 +47,8 @@ def get_occupation(data, hometown)
   data.each do |season, contestants_info|
     contestants_info.each do |contestant|
       contestant.each do |category, personal_info|
-        if category == "hometown" && personal
+        if category == "hometown" && personal_info == hometown
+          return contestant["occupation"]
         end
       end
     end

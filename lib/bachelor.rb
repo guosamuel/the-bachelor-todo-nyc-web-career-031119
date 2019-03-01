@@ -56,12 +56,12 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
+  total_sum = 0
   data.each do |correct_season, contestants_info|
     if correct_season == season
     contestants_info.each do |contestant|
       contestant.each do |category, personal_info|
-        if category == "age" && hometownpersonal_info == 
-          return contestant["occupation"]
+        contestant["age"]
         end
       end
     end
